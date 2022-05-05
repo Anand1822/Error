@@ -1,0 +1,25 @@
+def askint():
+    try:
+        val = int(input("Please enter an integer: "))
+    except:
+        print("Looks like you did not enter an integer!")
+
+    finally:
+        print("Finally, I executed!")
+    print(val)
+    
+    
+askint()
+
+
+Please enter an integer: 5
+Finally, I executed!
+5
+
+
+askint()
+
+
+Please enter an integer: five
+Looks like you did not enter an integer!
+Finally, I executed!
